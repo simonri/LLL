@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:500,700&display=swap");
+
+/*** GENERAL ***/
+body,
+html {
+  font-family: "Rajdhani";
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*** NAVIGATION ***/
+nav {
+  width: 100%;
+  height: 70px;
+  background: #1b262c;
+  color: #ffffff;
+  padding: 0 6em;
+  display: flex;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 .8em;
+  padding: 0 1em;
+}
+
+nav a .title {
+  font-size: 1.4em;
+}
+
+nav a.logo {
+  padding: 0;
+  margin: 0;
+}
+
+nav a.logo img {
+  display: block;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+  filter: invert(1);
+}
+
+/*** CONTENT ***/
+.page::before {
+  content: "";
+  display: block;
+  height: 70px;
+}
+
+.content {
+  margin: 0 6em;
+  background-color: #ffffff;
+  padding: 4em;
+  box-sizing: border-box;
+  min-height: calc(100% - 100px - 70px);
+}
+
+/*** FOOTER ***/
+footer {
+  width: 100%;
+  height: 100px;
+  background: #1b262c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/*** AUTH FORM ***/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 20em;
+  padding: 2em;
+  font-size: 1.1em;
+}
+
+.form-container .title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: .4em;
+}
+
+.form-container .form-row {
+  width: 100%;
+  margin-bottom: 1.7em;
+}
+
+.form-row input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #1b262c;
+  padding: 8px;
+}
+
+.form-container input:active,
+.form-container input:focus {
+  outline: none;
+}
+
+/*** SPLIT INPUTS ***/
+.form-container .split {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8em;
+}
+
+.form-container .split .split {
+  margin: 0;
+  width: 45%;
+  display: block;
+}
+
+/*** END ***/
+
+
+/*** BURGERS ***/
+.burger-list {}
+
+.burger-list .burger-item {
+  width: 100%;
+  height: 100px;
+  padding: 0 0 4em 0;
+  display: flex;
+  align-items: center;
+}
+
+.burger-list .burger-item:last-of-type {
+  padding: 0;
+}
+
+.burger-list .burger-item img {
+  max-height: 100%;
+  height: auto;
+  width: 15%;
+  border-radius: 8px;
+}
+
+.burger-list .burger-item .burger-info {
+  padding: 0 2em;
+  width: 85%;
+}
+
+.burger-list .burger-item .burger-info .title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.burger-list .burger-item .burger-info .description {
+  font-size: 1.3em;
+}
+
+/*** BURGER GET VIEW ***/
+.burger-view {
+  display: flex;
+}
+
+.image-large {
+  overflow: hidden;
+  width: 50%;
+}
+
+.image-large img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.burger-view .burger-info {
+  width: 50%;
+  padding: 1.2em;
+}
+
+.burger-view .burger-info .title {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: .1em;
+}
+
+.burger-view .burger-info .restaurant::before {
+  content: " - ";
+}
+
+.burger-view .burger-info .restaurant {
+  font-size: .8em;
+  font-weight: 500;
+  margin-bottom: .8em;
+  display: inline-block;
+}
+
+.burger-view .burger-info .description {
+  font-size: 1.1em;
+}
+
+.desc-buttons {
+  display: flex;
+}
+
+.burger-view .button {
+  display: inline-block;
+  margin-top: 42px;
+  margin-right: 12px;
+  padding: 12px;
+  display: block;
+  width: 120px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #1b262c;
+}
+
+.burger-view .button.votes {
+  border: 2px solid #1b262c;
+  background: transparent;
+  color: #1b262c;
+}
+
+.page-title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: .1em;
+}
+
+.page-subtitle {
+  font-size: 1.4em;
+  margin-bottom: 2em;
+}
+
+.addedby {
+  margin-top: 12px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
