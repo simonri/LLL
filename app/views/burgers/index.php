@@ -5,7 +5,9 @@
 
   <?php foreach ($data as $burger) : ?>
     <a href="/burgers/<?= $burger["id"] ?>" class="burger-item">
-      <img src="<?= $burger["image"] ?>" />
+      <div class="image-holder">
+        <img src="<?= $burger["image"] ?>" />
+      </div>
 
       <div class="burger-info">
         <div class="title"><?= $burger["name"] ?></div>
